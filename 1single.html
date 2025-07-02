@@ -1,7 +1,4 @@
----
-title: 1. Single file
-layout: page
----
+<!-- 
 
 <input id="photo" type="file">
 <div id="results"></div>
@@ -21,4 +18,39 @@ layout: page
     reader.readAsDataURL(photo.files[0]);
   }
   photo.addEventListener('input', read);
+</script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<input id="photo" type="file">
+<div id="results"></div>
+
+<script type="module">
+
+	import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client/dist/index.min.js";
+
+  async function loaded(reader) {
+    const response = await fetch(reader.result);
+    const exampleImage = await response.blob();;
+                
+    const client = await Client.connect("yowashi/bts_or_exo");
+    const result = await client.predict("/predict", { 
+            img: exampleImage, 
+    });
+
+    // document.getElementById("results").textContent = result['data'][0]['confidences'][0]['label'];
+    const label = result['data'][0]['confidences'][0]['label'];
+    results.innerHTML = `<br/><img src="${reader.result}" width="300"> <p>${label}</p>`;
+  }
+  function read() {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => loaded(reader))
+    reader.readAsDataURL(photo.files[0]);
+  }
+  photo.addEventListener('input', read);
 </script>
+
+</head>
+</html>
