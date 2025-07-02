@@ -20,8 +20,11 @@ layout: page
     });
 
     // document.getElementById("results").textContent = result['data'][0]['confidences'][0]['label'];
-    const label = result['data'][0]['confidences'][0]['label'];
-    results.innerHTML = `<br/><img src="${reader.result}" width="300"> <p>${label}</p>`;
+    const label_1 = result['data'][0]['confidences'][0]['label'].toUpperCase();
+    const confidence_1 = result['data'][0]['confidences'][0]['confidence'];
+    const label_2 = result['data'][0]['confidences'][1]['label'].toUpperCase();
+    const confidence_2 = result['data'][0]['confidences'][1]['confidence'];
+    results.innerHTML = `<br/><b>Input Image</b><br><img src="${reader.result}" width="300"> <p><b>Classifier Probabilties</b><br><b>${label_1}:</b> ${confidence_1}<br><b>${label_2}:</b> ${confidence_2}</p>`;
   }
   function read() {
     const reader = new FileReader();
