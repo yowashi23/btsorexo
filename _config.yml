@@ -1,4 +1,4 @@
-remote_theme: pages-themes/tactile@master
+remote_theme: pages-themes/tactile
 plugins:
 - jekyll-remote-theme
 
