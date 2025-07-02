@@ -1,15 +1,8 @@
 ---
-title: Home
+title: Hello
 layout: page
 ---
 
-# Simple JS Image Classifiers
+# Simple JS Image Classifier (BTS or EXO)
 
-Linked above are some examples of vision classifiers using JavaScript from [fast.ai](https://course.fast.ai) staff and students. Also, check out these other examples from students, along with the [fast.ai forums](https://forums.fast.ai) username of each contributor:
-
-- [predict_image](https://github.com/nuvic/predict_image) h/t nuvic
-- [Dog vs Cat](https://edwardjross.github.io/gradio-image-demo/) h/t edwardjross 
-- [Food classifier](https://suvash.github.io/very-basic-gradio-api-app/) h/t suvash 
-- [webcam interface](https://misza222.github.io/hf_api_predict/) h/t misza222
-- [Get to know your pet](https://gettoknowyourpet.com/) h/t aabdalla
-- [pyscript app](https://matdmiller.github.io/fastai-huggingface-sample-web-app1/pyscript-classifier.html) h/t matdmiller
+This is an example of a vision classifier using JavaScript using the [Gradio JavaScript Client](https://www.gradio.app/guides/getting-started-with-the-js-client) and API documentation found in the "Use via API" tab at the bottom of the page of the [Hugging Face Space](https://huggingface.co/spaces/yowashi/bts_or_exo). The original examples of vision classifiers do not work anymore because of changes in how to use the Hugging Face API, so this is a new example that works with the current API (25/07/01). This website is deployed using GitHub Pages. Out of the GitHub Pages supported themes listed [here](https://pages.github.com/themes/), I liked the aesthetic of the [Minima](https://github.com/jekyll/minima) theme for writers the most but I used the [Tactile](https://github.com/pages-themes/tactile) theme for this example. The html files `2multi.html` and `3parallel.html` can be ignored (25/07/01).

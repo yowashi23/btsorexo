@@ -1,2 +1,2 @@
-# tinypets
-Minimal JS interface to an image classifer
+# BTS or EXO
+Minimal JS interface to a BTS or EXO image classifer
