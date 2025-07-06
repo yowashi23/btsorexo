@@ -11,3 +11,10 @@ The original examples of vision classifiers do not work anymore because of chang
 
 Note to myself: GitHub Pages take a while to update even after the GitHub Action completes. Sometimes this may be because caching. It may help to add an easter egg every commit.
 TODO: ["As of 2023, BTS is the best-selling musical act in South Korean history according to the Circle Chart, having sold in excess of 40 million albums."](https://en.wikipedia.org/wiki/BTS). It would be a good idea to have a model that could tell the members apart. A multiclass classification model like the dog breeds model would work. I'm curious to see how well the model does.
+
+Chapter 2 of the book asks us to write our first blog post about our deep learning journey.
+"What's surprised you? What opportunities do you see for deep learning in your field (or a domain you're interested in?) What obstacles do you see?"
+2025-07-05:
+The ease of getting a model POC deployed with just a few lines of code surprised me. The material has been suprisingly engaging as well and I think that can be attributed to the top-down approach of teaching. I am learning to think of fun personal problems again - a skill that I haven't exercised in a while. If my field was music I would see the opportunity of using deep learning to recommend music to people. I find the idea of an objectively good recommendation not necessarily being a useful recommendation interesting. How do you know whether a customer would have discovered music without the recommendation? I really wonder what data at Spotify looks like. The obstacle of interpretability is one that I find hard to navigate. I think there will continue to be a big reliance on showing trends in outputs of models but not necessarily knowing EXACTLY why those outputs are being outputted given the input.
+
+If music recommendations worked really really well then people would discover music that they wouldn't have otherwise. Essentially a music recommender would be doing the job of a person at a record store. There would be no positive feedback loops that would result in a customer's music taste becoming extremely refined.
