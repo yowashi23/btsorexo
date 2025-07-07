@@ -11,6 +11,7 @@ The original examples of vision classifiers do not work anymore because of chang
 
 Note to myself: GitHub Pages take a while to update even after the GitHub Action completes. Sometimes this may be because caching. It may help to add an easter egg every commit.
 TODO: ["As of 2023, BTS is the best-selling musical act in South Korean history according to the Circle Chart, having sold in excess of 40 million albums."](https://en.wikipedia.org/wiki/BTS). It would be a good idea to have a model that could tell the members apart. A multiclass classification model like the dog breeds model would work. I'm curious to see how well the model does.
+Kaggle trains models much better than Colab does. I just wanted to try Colab out for this task.
 
 Chapter 2 of the book asks us to write our first blog post about our deep learning journey.
 "What's surprised you? What opportunities do you see for deep learning in your field (or a domain you're interested in?) What obstacles do you see?"
